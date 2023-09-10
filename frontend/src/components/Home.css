@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@600&display=swap');
+
+.home {
+  background-image: url("../../public/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+.titles{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: #0E5E6F;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: #9b6234;
+  font-family: 'Merienda', cursive;
+  margin-top: 0;
+}
+
+@media only screen and (max-width: 754px) {
+
+  h1 {
+    font-size: 35px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+}
+
+.home .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #DCAE94;
+  border-radius: 15px;
+  /* max-width: 1200px; */
+  margin: 20px 0;
+}
+
+.home .container .card {
+  position: relative;
+  min-width: 300px;
+  height: 440px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(230, 171, 116, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(204, 152, 54, 0.1);
+  border-radius: 15px;
+  margin: 30px;
+  transition: 0.5s;
+}
+
+.home .container .card:nth-child(1) .box .content a {
+  background: #2196f3;
+}
+
+.home .container .card:nth-child(2) .box .content a {
+  background: #e91e63;
+}
+
+.home .container .card:nth-child(3) .box .content a {
+  background: #23c186;
+}
+
+.home .container .card:nth-child(4) .box .content a {
+  background: #b121f3;
+}
+
+.home .container .card:nth-child(5) .box .content a {
+  background: #e9b31e;
+}
+
+.home .container .card:nth-child(6) .box .content a {
+  background: #c15023;
+}
+
+.home .container .card .box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: #332720;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* overflow: hidden; */
+  transition: 0.5s;
+}
+
+.home .container .card .box:hover {
+  transform: translateY(-50px);
+}
+
+.home .container .card .box:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.home .container .card .box .content {
+  padding: 20px;
+  text-align: center;
+}
+
+.home .container .card .box .content h2 {
+  position: absolute;
+  top: -10px;
+  right: 30px;
+  font-size: 8rem;
+  color: rgba(255, 255, 255, 0.1);
+}
+
+.home .container .card .box .content h3 {
+  font-size: 1.8rem;
+  color: #fff;
+  z-index: 1;
+  transition: 0.5s;
+  margin-bottom: 15px;
+}
+
+.home .container .card .box .content p {
+  font-family: poppins, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: rgba(170, 163, 163, 0.9);
+  z-index: 1;
+  transition: 0.5s;
+  font-style: italic;
+}
+
+.home .container .card .box .content a {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  background: black;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  margin-top: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+  font-family: poppins, sans-serif;
+}
+
+.home .container .card .box .content a:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+  background: #fff;
+  color: #000;
+}
